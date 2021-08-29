@@ -8,7 +8,7 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #bb29a3;
+  --first-color: purple;
   --second-color: #0E2431;
 }
 
@@ -253,9 +253,6 @@ img{
   row-gap: 2rem;
   text-align: center;
 }
-.skills__subtitle{
-  margin-bottom: var(--mb-2);
-}
 .skills__text{
   margin-bottom: var(--mb-4);
 }
@@ -269,11 +266,6 @@ img{
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
-}
-.skills__icon{
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
 }
 .skills__names{
   display: flex;
@@ -307,6 +299,42 @@ img{
   border-radius: .5rem;
 }
 
+/* ===== Coding Profile =====*/
+.coding__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.coding__text{
+  margin-bottom: var(--mb-4);
+}
+.coding_data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.coding__names{
+  display: flex;
+  align-items: center;
+}
+.coding__bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+.coding__img{
+  border-radius: .5rem;
+}
+
 /* ===== CONTACT =====*/
 .contact__input{
   width: 100%;
@@ -325,9 +353,6 @@ img{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
-}
-#status.success{
-  background-color: white;
 }
 
 /* ===== FOOTER =====*/
@@ -407,7 +432,7 @@ img{
     bottom: 15%;
   }
 
-  .about__container, .skills__container{
+  .about__container, .skills__container, .coding__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
