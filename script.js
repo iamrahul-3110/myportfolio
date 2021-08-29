@@ -49,6 +49,12 @@ sr.reveal('.skills__text',{});
 sr.reveal('.skills__data',{interval: 200}); 
 sr.reveal('.skills__img',{delay: 600});
 
+/*SCROLL Coding Profile*/
+sr.reveal('.coding__subtitle',{}); 
+sr.reveal('.coding__text',{}); 
+sr.reveal('.coding__data',{interval: 200}); 
+sr.reveal('.coding__img',{delay: 600});
+
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
