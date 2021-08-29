@@ -1,2 +1,2 @@
 # myportfolio
-my personal information
+my portfolio
