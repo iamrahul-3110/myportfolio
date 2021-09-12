@@ -55,6 +55,11 @@ sr.reveal('.coding__text',{});
 sr.reveal('.coding__data',{interval: 200}); 
 sr.reveal('.coding__img',{delay: 600});
 
+/*SCROLL Project Profile*/
+sr.reveal('.project__subtitle',{}); 
+sr.reveal('.project__text',{}); 
+sr.reveal('.project__data',{interval: 200}); 
+sr.reveal('.project__img',{delay: 600});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
