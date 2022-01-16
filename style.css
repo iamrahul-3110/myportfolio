@@ -222,7 +222,9 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px 30px;
 }
 
 /*BUTTONS*/
@@ -251,7 +253,8 @@ img{
 }
 .about__img img{
   width: 200px;
-  border-radius: .5rem;
+  height: auto;
+  border-radius: 100%;
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -363,7 +366,9 @@ img{
   width: 80%;
 }
 .skills__img{
-  border-radius: .5rem;
+  border-radius: 5px 20px 5px;
+  width: auto;
+  height: auto;
 }
 
 /* ===== Projects =====*/
@@ -399,7 +404,9 @@ img{
   z-index: var(--z-back);
 }
 .project__img{
-  border-radius: .5rem;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
 }
 
 /* ===== Coding Profile =====*/
@@ -435,7 +442,9 @@ img{
   z-index: var(--z-back);
 }
 .coding__img{
-  border-radius: .5rem;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
 }
 
 /* ===== CONTACT =====*/
