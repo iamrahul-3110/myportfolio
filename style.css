@@ -224,7 +224,7 @@ img{
   bottom: 0;
   width: 200px;
   height: 200px;
-  border-radius: 15px 30px;
+  border-radius: 100%;
 }
 
 /*BUTTONS*/
@@ -258,6 +258,10 @@ img{
 }
 
 /*==================== QUALIFICATION ====================*/
+.qualification__container{
+  row-gap: 2rem;
+  text-align: center;
+}
 .qualification__tabs{
     display: flex;
     justify-content:space-evenly;
@@ -447,6 +451,69 @@ img{
   height: auto;
 }
 
+/*==================== EXPERIENCE ====================*/
+.experience__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.experience__tabs{
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom:var(--mb-2);
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.experience__button{
+  font-size:var(--h3-font-size);
+  font-weight:var(--font-medium);
+  cursor: pointer;
+}
+
+.experience__button:hover{
+  color: var(--first-color);
+}
+
+.experience__icon{
+  font-size:1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.experience__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 0.5rem;
+}
+
+.experience__title{
+  margin-bottom: var(--mb-4);
+}
+
+.experience__subtitle{
+  margin-bottom: var(--mb-4);
+}
+
+.experience__calendar{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.experience__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius:50%;
+}
+
+.experience__line{
+  display:block;
+  width:1px;
+  height:100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
 /* ===== CONTACT =====*/
 .contact__input{
   width: 100%;
@@ -547,7 +614,7 @@ img{
     bottom: 15%;
   }
 
-  .about__container, .skills__container, .coding__container,.project__container,.qualification__container{
+  .about__container, .skills__container, .coding__container,.project__container,.qualification__container,.experience__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
@@ -572,6 +639,24 @@ img{
 }
   .qualification__sections{
     grid-template-columns: .5fr;
+}
+.experience__data{
+  gap: .5rem;
+}
+
+.experience__sections{
+  display: grid;
+  grid-template-columns:.6fr;
+  justify-content: center;
+}
+.experience__tabs{
+  justify-content: center;
+}
+.experience__button{
+  margin: 0 var(--mb-1);
+}
+.experience__sections{
+  grid-template-columns: .5fr;
 }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
