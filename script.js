@@ -28,15 +28,15 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'right',
-    distance: '100px',
-    duration: 1000,
+    distance: '200px',
+    duration: 1500,
     reset: false
 });
 
 /*SCROLL HOME*/
 sr.reveal('.home__title',{}); 
 sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home__img',{delay: 400}); 
+sr.reveal('.home__img',{}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 
 /*SCROLL ABOUT*/
@@ -66,6 +66,15 @@ sr.reveal('.coding__subtitle',{});
 sr.reveal('.coding__text',{}); 
 sr.reveal('.coding__data',{interval: 200}); 
 sr.reveal('.coding__img',{delay: 600});
+
+/*SCROLL EXPERIENCE*/
+sr.reveal('.experience__tabs',{}); 
+sr.reveal('.experience__title',{delay: 400});
+sr.reveal('.experience__subtitle',{delay: 400}); 
+sr.reveal('.experience__content',{delay: 400}); 
+sr.reveal('.experience_section',{delay: 400});
+sr.reveal('.section__title',{delay: 400}); 
+sr.reveal('.section__subtitle',{delay: 400}); 
 
 /*SCROLL Project Profile*/
 sr.reveal('.project__subtitle',{}); 
